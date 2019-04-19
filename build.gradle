@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'BUPT'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //maven: https://mvnrepository.com/artifact/com.madgag.spongycastle/core/1.58.0.0
+    //github: https://github.com/rtyley/spongycastle
+    implementation 'com.madgag.spongycastle:core:1.58.0.0'
+}
