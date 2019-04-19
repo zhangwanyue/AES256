@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 * PBKDF2WithHmacSHA256 + AES256
 
@@ -17,7 +17,7 @@
 **该方法使用了一个第三方库`com.madgag.spongycastle:core:1.58.0.0`,可以用于Android**
 
 
-### 关于`AES256`与`JavaSecurity policy`
+## 关于`AES256`与`JavaSecurity policy`
 
 Java中使用Java Cryptography extension的时候，Java运行时会强制限制某些密钥长度参数，当你使用AES128长度的密钥的时候，是没有限制的，而使用AES256则会受到密钥长度的限制。为解决这个问题，你需要去jdk官网下载`unlimited policy`，并替换原来的jdk中的policy文件（否则在编译时会报错：`InvalidKeyException Illegal key size`）。
 
